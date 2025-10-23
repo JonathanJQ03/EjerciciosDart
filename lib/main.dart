@@ -3,6 +3,7 @@ import 'package:jaguaco_tarea_uno/algoritmoFinanzas.dart';
 import 'ejercicios.dart';
 import 'algoritmoMB.dart';
 import 'algoritmoProduccion.dart';
+import 'ejercicio10.dart';
 
 void main() {
   runApp(const MyApp());
@@ -119,7 +120,10 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                // Acción
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Ejercicio10()),
+                );
               },
               child: const Text(
                 'Ejercicio 10',
